@@ -4,6 +4,15 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
 //
+//= require jquery.min
 //= require jquery
-//= require jquery_ujs
+//= require_self
 //= require_tree .
+//= require cufon
+//= require cufon.font
+//= require custom
+//= require cycle
+//= require jquery.prettyPhoto
+//= require vcard.packed
+
+

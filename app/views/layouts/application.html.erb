@@ -2,13 +2,23 @@
 <html>
 <head>
   <title>Resume</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
+<link href="assets/style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="assets/jquery.js"></script>
+<script type="text/javascript" src="assets/jquery.min.js"></script>
+<script type="text/javascript" src="assets/cycle.js"></script>
+<script type="text/javascript" src="assets/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="assets/custom.js"></script>
+<script type="text/javascript" src="assets/cufon.js"></script>
+<script type="text/javascript" src="assets/cufon.font.js"></script>
+<script type="text/javascript" src="assets/vcard.packed.js"></script>
+<link rel="image_src" type=" image/jpeg" href="assets/vcard/profile.jpg" />
+<link rel="stylesheet" href="assets/prettyPhoto.css" type="text/css" media="screen"/>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
-
+ 
 </body>
 </html>
