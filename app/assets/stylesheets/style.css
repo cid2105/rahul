@@ -92,7 +92,7 @@ ul.networks li .title .surl{clear:both;color:#888;font-size:11px;margin:0;paddin
 ul.networks li p{color:#999;font-size:11px;margin:0;padding:0}
 
 /*----------------------------------Contact----------------------------------*/
-.contact .sendbutton{float:right;width:auto;padding:4px 20px;background:#cfcfcf;color:#858585;text-shadow:1px 1px 1px #fff;border:none;text-transform:uppercase;font-weight:bold;font-size:10px;cursor:pointer}
+.contact .sendbutton{float:right;width:auto;padding:4px 20px;background:#cfcfcf;color:#858585;text-shadow:1px 1px 1px #fff;border:none;text-transform:uppercase;font-weight:bold;font-size:10px;cursor:pointer; position:relative; bottom:4px;}
 .contact .error{background:#feeded;border-color:#fcd5d5}
 #email_form{margin-top:25px;width:427px}
 #email_send{margin-top:25px;width:427px;display:none}
