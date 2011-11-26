@@ -116,7 +116,7 @@ $.notification('Thank you for contacting me!', {
 			<ul style="margin-top:3px;">	
 			<li class="li-moreinfo">
 				<p class="nopadding" sites>
-					 <a href="http://www.greekgavel.com" target="_blank" site="greekgavel">GreekGavel</a><br/>
+					 <a href="http://www.greekgavel.com" target="_blank" site="greekgavel" description="A social networking site for fraternities and sororities to consolidate greek life on all fronts - the individual chapter, the larger organization and greek life at large for a university. The site offers a directory of all members of the organization, networking opportunities, a bulletin board for quick announcements, a gallery, a personal message utility and a forum. The main goal of the site is to replace the listserv. To remedy email spam - the main issue with listservs - a 'daily digest' is sent out to all the members of the organization every day at noon. This daily digest summarizes all new threads, posts and announcements that have been created in the past day.">GreekGavel</a><br/>
 					<b>A Social Network for Fraternities</b>
 					<br/><br/>
 					 <a href="http://www.matchu.me" target="_blank" site="matchume">MatchU.Me</a><br/>
@@ -250,7 +250,7 @@ $.notification('Thank you for contacting me!', {
 		        // Setup the tooltip with the content
 		        $(this).qtip(
 		        {
-		            content: thumbnail,
+		            content: thumbnail + " " + $(this).attr('description'),
 		            position: {
 		                corner: {
 		                    tooltip: 'bottomMiddle',
