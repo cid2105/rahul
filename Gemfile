@@ -8,6 +8,9 @@ gem 'rails',     :git => 'git://github.com/rails/rails.git', :branch=>'3-1-stabl
 
 gem 'sqlite3'
 
+group :production do
+	gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
