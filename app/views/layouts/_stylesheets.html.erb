@@ -1,0 +1,13 @@
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<% 
+%w(style jquery-ui facebox facebook uniform.aristo notify tipsy bubble datatables dropdown poll scroll slimbox sticky infinite_scrolling  twitter universities twitter sNotify scaffold roundrr ribbon organizations navigation mediagallery fancybox dropdown discussions captify).each do |x| %>
+	<%= stylesheet_link_tag "#{x}",  :media => 'screen' %>
+<% end %>
+
+<link rel="shortcut icon" href="images/favicon-12.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon-12.ico" type="image/x-icon">
+<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+
