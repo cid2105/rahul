@@ -6,11 +6,12 @@
 
 <!-- Header -->
    <div id="header">
-   	<div id="logo">John Doe</div>
+   	<div id="logo">Cole Diamond</div>
 		<ul id="menu">
 			<li class="active"><a href="#home">Home</a></li>
 			<li><a href="#skills">Skills</a></li>
-   			<li><a href="#work">Work</a></li><li><a href="#networks">Networks</a></li>
+   			<li><a href="#work">Work</a></li>
+			<li><a href="#networks">Networks</a></li>
    			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</div><!-- End Header -->
@@ -24,9 +25,9 @@
 	<!-- Menu Home -->
 	<div id="menu_home" class="contentitem">
 		<div class="main">
-			<div class="pagetitle">John Doe - Welcome</div>
-   <h1>Hi! I'm John Doe</h1>
-	<p><img src="assets/vcard/welcome.jpg" width="80" height="80" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sollicitudin consectetur ante a pharetra. Aliquam sit amet lorem vitae tortor volutpat iaculis in sed erat. Sed a magna tortor, sit amet dapibus mi. Sed dictum volutpat dictum. Cras rhoncus ultrices lobortis.</p>
+			<div class="pagetitle">Cole Diamond - Welcome</div>
+   <h1>"Coal Graphite Diamond"</h1>
+	<p><%= image_tag "profile_picture.jpg", :width => "80", :height=>"80" %>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sollicitudin consectetur ante a pharetra. Aliquam sit amet lorem vitae tortor volutpat iaculis in sed erat. Sed a magna tortor, sit amet dapibus mi. Sed dictum volutpat dictum. Cras rhoncus ultrices lobortis.</p>
 	<p>Pellentesque quis mauris et neque egestas mattis. Nunc congue dapibus lacus. Pellentesque aliquet suscipit pharetra. In dictum, nibh non mattis dapibus, purus sapien vulputate felis, at fermentum arcu dolor in ligula. </p>
 			</div>
 
@@ -63,15 +64,27 @@
 		<h2>My Experience</h2>
 			<ul>	
 			<li class="li-moreinfo">
-				<p class="nopadding">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non quam non neque vehicula hendrerit sit amet quis urna.</p>
-				<p>Nullam ultrices iaculis pharetra. Vestibulum eros leo, tempor quis fringilla id, luctus vitae ipsum.</p>
+				<p class="nopadding">
+					 05/2011 - 08/2011<br/>
+					<b>Gilt Groupe, New York, NY</b><br/>
+					<i>Software Engineer Intern </i>
+				
+					<br/>	<br/>
+						06/2010 - 08/2010<br/>
+						<b>JP Morgan, New York, NY</b><br/>
+						<i><%= "risk management intern".titleize() %> </i>					
+					<br/>	<br/>
+						06/2009 - 08/2009<br/>
+						<b>Columbia University</b> <br/>                                                                                             
+						<i><%= "research assistant: machine learning".titleize %> </i>					
+						</p>
 			</li>
 			</ul>
 		</div>
 	</div><!-- Menu Work -->
 
 		<div id="menu_work" class="contentitem">
-			<div class="pagetitle">John Doe - My Work</div>
+			<div class="pagetitle">Cole Diamond - My Work</div>
 
 				<ul class="navigation" id="worknavigation">
 					<li>here comes menu</li>
@@ -108,19 +121,14 @@
 		<h1>Let's connect...</h1>
 
 			<ul class="networks">
-				<li><a href="http://www.facebook.com" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/facebook.png" alt="facebook"/><span class="title"><span class="sname">Facebook</span><span class="surl"><br/>facebook.com/johndoe</span></span></span></a></li>
-				<li><a href="http://www.flickr.com" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/flickr.png" alt="flickr"/><span class="title"><span class="sname">Flickr</span><span class="surl"><br/>flickr.com/johndoe</span></span></span></a></li>
-				<li><a href="http://www.last.fm" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/lastfm.png" alt="lastfm"/><span class="title"><span class="sname">lastFM</span><span class="surl"><br/>last.fm/johndoe</span></span></span></a></li>
-				<li><a href="http://www.twitter.com" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/twitter.png" alt="twitter"/><span class="title"><span class="sname">Twitter</span><span class="surl"><br/>twitter.com/johndoe</span></span></span></a></li>
-				<li><a href="http://www.digg.com" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/digg.png" alt="digg"/><span class="title"><span class="sname">Digg</span><span class="surl"><br/>digg.com/johndoe</span></span></span></a></li>
-				<li><a href="http://www.me.com" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/mobileme.png" alt="mobileme"/><span class="title"><span class="sname">MobileMe</span><span class="surl"><br/>me.com/johndoe</span></span></span></a></li>
-				<li><a href="http://www.linkedin.com" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/linkedin.png" alt="linkedin"/><span class="title"><span class="sname">LinkedIn</span><span class="surl"><br/>linkedin.com/in/johndoe</span></span></span></a></li>
-				<li><a href="http://www.vimeo.com" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/vimeo.png" alt="vimeo"/><span class="title"><span class="sname">Vimeo</span><span class="surl"><br/>vimeo.com/johndoe</span></span></span></a></li>
-				<li><a href="http://www.myspace.com" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/myspace.png" alt="myspace"/><span class="title"><span class="sname">MySpace</span><span class="surl"><br/>myspace.com/johndoe</span></span></span></a></li>
+				<li><a href="http://www.facebook.com/coleidiamond" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/facebook.png" alt="facebook"/><span class="title"><span class="sname">Facebook</span><span class="surl"><br/>facebook.com/coleidiamond</span></span></span></a></li>
+				<li><a href="http://twitter.com/#!/coal_diamond" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/twitter.png" alt="twitter"/><span class="title"><span class="sname">Twitter</span><span class="surl"><br/>@coal_diamond</span></span></span></a></li>
+				<li><a href="http://www.linkedin.com" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/linkedin.png" alt="linkedin"/><span class="title"><span class="sname">LinkedIn</span><span class="surl"><br/>http://www.linkedin.com/colediamond</span></span></span></a></li>
 			</ul>
 			</div><!-- End Menu Networks -->
 
-		<!-- Menu Contact --><div id="menu_contact" class="contentitem">
+		<!-- Menu Contact -->
+		<div id="menu_contact" class="contentitem">
 			<div class="pagetitle">John Doe - Let's chat</div>
 				<div class="main contact">
 
@@ -139,8 +147,9 @@
 				</div>
 
 				<div class="sidebar">	
-			<h2>John Doe</h2>
-			<p>291 Fakestreet<br/>90405 Los Angeles<br/> California USA<br/><br/>Cell: +323 4987373<br/>Email: <a href="mailto:email@email.com">email@email.com</a><br/></p><hr class="spacer" /><a class="button" href="#">Download vCard</a>
+			<h2>Cole Diamond</h2>
+			<p>2849 Lerner Hall, 2920 Broadway
+			 <br/>New York NY 10027<br/>United States<br/><br/>Cell: +323 4987373<br/>Email: <a href="mailto:cid2105@columbia.edu">cid2105@columbia.edu</a><br/></p><hr class="spacer" /><a class="button" href="#">Download vCard</a>
 	</div>
 	</div><!-- End Menu Contact -->
 	</div><!-- End Scroller -->

@@ -6,7 +6,6 @@
 //
 //= require jquery.min
 //= require jquery
-//= require_self
 //= require cufon
 //= require cufon.font
 //= require custom
