@@ -57,7 +57,7 @@ textarea{font-family:Arial;padding:8px 0 8px 5px;margin:0 0 10px 0;width:420px;b
 #scroller .contentitem{width:710px;height:240px;float:left;display:none;margin-right:30px}
 
 /*----------------------------------Skills----------------------------------*/
-ul.skills{margin:10px 0 0 0}
+ul.skills {margin:10px 0 0 0}
 ul.skills li{padding:15px 10px 14px 0;border-bottom:1px solid #ddd;color:#888;text-shadow:1px 1px 1px #fff;list-style:none}
 ul.skills li:last-child{border-bottom:none}
 ul.skills li .topic{float:left;width:160px;font-weight:bold;color:#777;font-size:14px;text-shadow:1px 1px 1px #fff;height:7px}
@@ -96,3 +96,8 @@ ul.networks li p{color:#999;font-size:11px;margin:0;padding:0}
 .contact .error{background:#feeded;border-color:#fcd5d5}
 #email_form{margin-top:25px;width:427px}
 #email_send{margin-top:25px;width:427px;display:none}
+
+ul[special] li
+{
+	padding:15px 10px 34px 0;
+}

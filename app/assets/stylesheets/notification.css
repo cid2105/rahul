@@ -1,0 +1,14 @@
+#jquery-notification {
+background: transparent url(black-75.png) repeat;
+border-radius: 12px;
+padding: 20px;
+cursor: pointer;
+}
+
+#jquery-notification-message {
+font: bold 24px Helvetica, Arial, sans-serif;
+color: #FFF;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+text-align: center;
+white-space: nowrap;
+}

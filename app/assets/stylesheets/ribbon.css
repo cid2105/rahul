@@ -1,0 +1,76 @@
+.infobox-container {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+.infobox {
+    width: 250px;
+    padding: 10px 5px 5px 5px;
+    margin:10px;
+    position: relative;
+    z-index: 90;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    background: #424242;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1BF), to(#16F));
+    background-image: -moz-linear-gradient(top,#1BF,#16F);
+    color: #fff;
+    font-size: 90%;
+}
+.infobox h3 {
+    position: relative;
+    width: 270px;
+    color: #fff;
+    padding: 10px 5px;
+    margin: 0;
+    left: -15px;
+    z-index: 100;
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    background: #3198dd;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#33acfc), to(#3198dd));
+    background-image: -moz-linear-gradient(top,#33acfc,#3198dd);
+    font-size: 160%;
+    text-align: center;
+    text-shadow: #2187c8 0px 1px;
+    font-weight: bold;
+}
+ 
+.infobox-container .triangle-l {
+    border-color: transparent #2083c2 transparent transparent;
+    border-style:solid;
+    border-width:13px;
+    height:0;
+    width:0;
+    position: absolute;
+    left: -12px;
+    top: 45px;
+    z-index: 0; /* displayed under infobox */
+}
+.infobox-container .triangle-r {
+    border-color: transparent transparent transparent #2083c2;
+    border-style:solid;
+    border-width:13px;
+    height:0;
+    width:0;
+    position: absolute;
+    left: 266px;
+    top: 45px;
+    z-index: 0; /* displayed under infobox */
+}
+.infobox a {
+    color: #35b0ff;
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+}
+.infobox a:hover, .infobox a:focus {
+    text-decoration: none;
+    border-bottom: 1px dotted #35b0ff;
+}

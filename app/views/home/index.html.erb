@@ -1,4 +1,16 @@
-
+<% if @sent %>
+<script>
+$.notification('Thank you for contacting me!', {
+			className: 'jquery-notification',
+			duration: 2000,
+			freezeOnHover: false,
+			hideSpeed: 250,
+			position: 'top-right',
+			showSpeed: 250,
+			zIndex: 99999
+		});
+</script>
+<% end %>
 
 <!-- Wrapper --><div id="wrapper">
 	<!-- Vcard --><div id="vcard">
@@ -7,7 +19,9 @@
 
 <!-- Header -->
    <div id="header">
-   	<div id="logo">Cole Diamond</div>
+   
+			
+			<div style="float:left; position:absolute; top: 57px;"><h1> Cole Diamond</h1></div>
 		<ul id="menu">
 			<li class="active"><a href="#home">Home</a></li>
 			<li><a href="#education">Education</a></li>
@@ -28,9 +42,8 @@
 	<div id="menu_home" class="contentitem">
 		<div class="main">
 			<div class="pagetitle">Cole Diamond - Welcome</div>
-   <h1>Cole Diamond</h1>
-	<p><%= image_tag "profile_picture.jpg", :width => "80", :height=>"80" %>
-   <b>Welcome</b>
+   <h1>Welcome</h1>
+	<p><a rel="fancybox" href="<%= asset_path("profile_picture.jpg") %>" title="Cole Diamond"><%= image_tag "profile_picture.jpg", :width => "80", :height=>"80" %></a>
 	</p>
 	<p>Born and raised in Great Neck, New York, Cole Diamond is a junior at Columbia University where he studies Computer Science and Financial Economics.
 		Feel free to explore the site to find out more about Cole.</p>
@@ -56,37 +69,39 @@
 			<div class="pagetitle">Cole Diamond - Education</div>
 				<div class="main">
 		<h1>Curriculum Vitae</h1>
-			<ul class="skills">
-				<li><span class="topic">Proficiency (4 years +)</span>Java 6.0, Python, HTML/CSS/JQuery &amp; SQL </li>
-				<li><span class="topic">Experience (2 years +)</span>Perl, Ruby,  C/C++ &amp; GitHub</li>
-				<li><span class="topic">In training (1 year)</span>JSP, PHP, MongoDB &amp; PostgreSQL</li>
-				<li><span class="topic">Frameworks</span> Django and Ruby on Rails (2.3, 3.0, 3.1), 3 years</li>
+			<ul class="skills" special>
+				<li><span class="topic">Columbia University (2009-2013)</span>
+				BS, Computer Science; BA, Financial Economics (3.8 GPA) </li>
+				<li><span class="topic">John L Miller Great Neck North High School</span>Valedictorian of the Class of 2009</li>
+				<li><span class="topic">Distinctions</span>HackNY Fellow, National AP Scholar, 2360/2400 SAT <span style="margin-top: 5px; position:relative; left:159px;"> Deans List (All Semesters), Treasurer of ACM at Columbia</span></li>
 			</ul>
 				</div>
-				<div class="sidebar">
+				<div class="sidebar" style="margin-bottom:0px; padding:0px; font-size:10px;">
 
-				<h2><a href="<%= asset_path "resume.pdf" %>" >Downloadable PDF</a></h2>
-				<ul>
-				<li class="li-moreinfo">
-				<p class="nopadding">
+					<h2 style="margin-bottom:3px; margin-top:0px; padding:0px;">Relevant Coursework</h2>
+						<ul style="margin-top:8px;">	
+						<li class="li-moreinfo" style="padding:0px;">
+							<p class="nopadding">
+						<span style="margin-bottom:8px;">	Mathematics: Calculus I-V, Discrete Math, Linear Algebra
+							Scientific Computation</span>
+						<span style="margin-bottom:5px;">CS: Intro to Java, Object Oriented Programming, Data Structures,
+							CS Theory, Advanced Programming, Robotics, Databases </span>
+						<span style="margin-bottom:8px;">Economics: Principles of Economics, Microeconomics, Macroeconomics,
+							Accounting and Finance <br/>
+							</p>
+							                                                                      
+						</li>
+						</ul>
+					</div>
 			
-				<ul class="thumb">
-					<a  href="<%= asset_path "resume.jpg" %>" rel="resume" ><%= image_tag "resume.jpg", :height => "153px", :width => "135px;", :style => "position:absolute; z-index:1000;" %></a>
-					<a  href="<%= asset_path "resume2.jpg" %>" rel="resume"></a>
-					
-					</li>
-				</ul>
-				</p>
-				</li>
-				</ul>
-			</div>	
+			
 				
 	 </div>
 
 	<div id="menu_skills" class="contentitem">
 			<div class="pagetitle">Cole Diamond - Skills</div>
 				<div class="main">
-		<h1>My skills</h1>
+		<h1>Programming Skills</h1>
 			<ul class="skills">
 				<li><span class="topic">Proficiency (4 years +)</span>Java 6.0, Python, HTML/CSS/JQuery &amp; SQL </li>
 				<li><span class="topic">Experience (2 years +)</span>Perl, Ruby,  C/C++ &amp; GitHub</li>
@@ -97,58 +112,56 @@
 
 		<div class="sidebar">
 
-		<h2>My Experience</h2>
-			<ul>	
+		<h2 style="margin-bottom:3px;">Websites Created</h2>
+			<ul style="margin-top:3px;">	
 			<li class="li-moreinfo">
 				<p class="nopadding">
-					 05/2011 - 08/2011<br/>
-					<b>Gilt Groupe, New York, NY</b><br/>
-					<i>Software Engineer Intern </i>
-				
-					<br/>	<br/>
-						06/2010 - 08/2010<br/>
-						<b>JP Morgan, New York, NY</b><br/>
-						<i><%= "risk management intern".titleize() %> </i>					
-					<br/>	<br/>
-						06/2009 - 08/2009<br/>
-						<b>Columbia University</b> <br/>                                                                                             
-						<i><%= "research assistant: machine learning".titleize %> </i>					
-						</p>
+					 <a href="http://www.greekgavel.com" target="_blank">GreekGavel</a><br/>
+					<b>A Social Network for Fraternities</b>
+					<br/><br/>
+					 <a href="http://www.matchu.me" target="_blank">MatchU.Me</a><br/>
+						<b>Find Your Match, 100% Anonymously</b>
+					<br/><br/>
+					<a href="http://www.mealmecca.com" target="_blank">MealMecca</a><br/>
+						<b>Rate Menus, Not Restaurants</b> 
+					<br/> 					<br/>    
+					<a href="http://w4111a.cs.columbia.edu/~tlm2116/databases/index.php" target="_blank">Flash'd</a><br/>
+						<b>An Intuitive Flashcard App</b> 
+					<br/><br/>                                                                                    
+					
 			</li>
 			</ul>
 		</div>
 	</div><!-- Menu Work -->
 
 		<div id="menu_work" class="contentitem">
-			<div class="pagetitle">Cole Diamond - Work</div>
+			<div class="pagetitle">Cole Diamond - Experience</div>
 
-				<ul class="navigation" id="worknavigation">
-					<li>here comes menu</li>
+					<div class="main" style="margin-right: 0px; width: 70%;">
+			<h1>Work experience</h1>
+			  <ul class="skills">
+				<li><span class="topic">Gilt Groupe </span><br/><p>Software Engineer Intern New York, NY (05/2011 - 08/2011) </p></li>
+				<li><span class="topic">JP Morgan Chase</span><br/><p><%= "risk management intern".titleize() %>  (06/2010 - 08/2010)</p></li>
+			    <li><span class="topic">Columbia University </span><br/><p> <%= "research assistant: machine learning".titleize %> (06/2009 - 08/2009)</p></li>
+			  </ul>
+		</div>
+					
+		<div class="sidebar">
+				<h2 class="link" style="cursor:pointer;" onclick="window.location='<%= asset_path "resume.pdf" %>';" >Download Resume</a></h2>
+				<ul>
+				<li class="li-moreinfo">
+				<p class="nopadding">
+			
+				<ul class="thumb">
+					<a  href="<%= asset_path "resume.jpg" %>" rel="resume" ><%= image_tag "resume.jpg", :height => "153px", :width => "135px;", :style => "position:absolute; z-index:1000;", :title => "Click to Preview" %></a>
+					<a  href="<%= asset_path "resume2.jpg" %>" rel="resume"></a>
+					
+					</li>
 				</ul>
-		<h1>Check out my work</h1>
-		
-		<!-- work mask --><div id="workmask">
-				<div id="workscroller">
-					<ul class="work">
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work1.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work2.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work3.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work4.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work5.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work6.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work1.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work2.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work3.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work4.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work5.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work6.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work1.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work2.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work3.jpg" alt="work1"/></a></li>
-						<li><a href="assets/work/work1.jpg" class="work-item-preview" rel="prettyPhoto"><img src="assets/work/work4.jpg" alt="work1"/></a></li>
-					</ul>
-				</div>
-		</div><!-- End work mask -->
+				</p>
+				</li>
+				</ul>
+		</div>
 	</div><!-- End menu work -->
 
 
@@ -169,12 +182,16 @@
 				<div class="main contact">
 
 		<h1>Contact</h1>
+	
 			<div id="email_form">
+				<form method="post">
 				<input type="text" name="name" value="name"/>
 				<input type="text" name="email" value="email"/>
 				<textarea name="message" rows="4" cols="4">message</textarea>
 				<input type="submit" class="sendbutton sendmail" value="send"/>
+				</form>
 			</div>
+
 			
 					<div id="email_send">
 						<h2>Your email has been sent!</h2>
@@ -202,7 +219,18 @@
 					'speedIn'		:	600, 
 					'speedOut'		:	200, 
 					'overlayShow'	:	false
-			});
+			}).find("img").tipsy({fade: true, gravity: 's'})
+			
+			$("[rel*='fancybox']").fancybox();
+			
+			$("h2.link").hover(function (){
+			        $(this).css("text-decoration", "underline");
+			    },function(){
+			        $(this).css("text-decoration", "none");
+			    }
+			);
+			
+
 
 		});
 
