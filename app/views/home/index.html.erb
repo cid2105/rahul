@@ -115,20 +115,20 @@ $.notification('Thank you for contacting me!', {
 		<h2 style="margin-bottom:3px;">Websites Created</h2>
 			<ul style="margin-top:3px;">	
 			<li class="li-moreinfo">
-				<p class="nopadding">
-					 <a href="http://www.greekgavel.com" target="_blank">GreekGavel</a><br/>
+				<p class="nopadding" sites>
+					 <a href="http://www.greekgavel.com" target="_blank" site="greekgavel">GreekGavel</a><br/>
 					<b>A Social Network for Fraternities</b>
 					<br/><br/>
-					 <a href="http://www.matchu.me" target="_blank">MatchU.Me</a><br/>
+					 <a href="http://www.matchu.me" target="_blank" site="matchume">MatchU.Me</a><br/>
 						<b>Find Your Match, 100% Anonymously</b>
 					<br/><br/>
-					<a href="http://www.mealmecca.com" target="_blank">MealMecca</a><br/>
+					<a href="http://www.mealmecca.com" target="_blank" site="mealmecca">MealMecca</a><br/>
 						<b>Rate Menus, Not Restaurants</b> 
 					<br/> 					<br/>    
-					<a href="http://w4111a.cs.columbia.edu/~tlm2116/databases/index.php" target="_blank">Flash'd</a><br/>
+					<a href="http://w4111a.cs.columbia.edu/~tlm2116/databases/index.php" target="_blank" site="flashd">Flash'd</a><br/>
 						<b>An Intuitive Flashcard App</b> 
 					<br/><br/>                                                                                    
-					
+				</p>	
 			</li>
 			</ul>
 		</div>
@@ -230,6 +230,43 @@ $.notification('Thank you for contacting me!', {
 			    }
 			);
 			
+
+ 		   var apiKey = 'ReuyKzSZUUjL';
+
+		    // Notice the use of the each method to gain access to each element individually
+		    $('a[site]').each(function()
+		    {
+		        // Grab the URL from our link
+		        var url = "assets/" +  $(this).attr('site') + ".png";
+		
+		        // Create image thumbnail using Websnapr thumbnail service
+		        thumbnail = $('<img />').attr({
+		            src: url,
+		            alt: 'Loading thumbnail...',
+		            width: 202,
+		            height: 152
+		        });
+
+		        // Setup the tooltip with the content
+		        $(this).qtip(
+		        {
+		            content: thumbnail,
+		            position: {
+		                corner: {
+		                    tooltip: 'bottomMiddle',
+		                    target: 'topMiddle'
+		                }
+		            },
+		            style: {
+		                tip: true, // Give it a speech bubble tip with automatic corner detection
+					    border: {
+					         radius: 8,
+					         color: '#777'
+					      },
+						name: 'light'
+		            }
+		        });
+		    });
 
 
 		});

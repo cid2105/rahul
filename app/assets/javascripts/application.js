@@ -16,4 +16,4 @@
 //= require fancybox
 //= require tipsy 
 //= require notification
-
+//= require qtip
