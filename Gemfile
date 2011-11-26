@@ -12,7 +12,7 @@ group :production do
 	gem 'pg'
 	gem "thin"
 	gem "heroku"
- 	gem 'therubyracer-heroku', '0.8.1.pre3'
+ 	gem 'therubyracer'
 end
 
 # Gems used only for assets and not required
