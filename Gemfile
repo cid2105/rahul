@@ -10,6 +10,8 @@ gem 'sqlite3'
 
 group :production do
 	gem 'pg'
+	gem "thin"
+	gem "heroku"
 end
 
 # Gems used only for assets and not required
