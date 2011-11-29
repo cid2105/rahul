@@ -12,202 +12,77 @@ $.notification('Thank you for contacting me!', {
 </script>
 <% end %>
 
-<!-- Wrapper --><div id="wrapper">
-	<!-- Vcard --><div id="vcard">
-		<div class="clearpx"></div>
 
+  <!-- <script src="/javascripts/jquery.js" type="text/javascript"></script> -->
 
-<!-- Header -->
-   <div id="header">
-   
-			
-			<div style="float:left; position:absolute; top: 57px; 
-		    left: 47px;"><h1> Cole Diamond</h1></div>
-		<ul id="menu">
-			<li class="active"><a href="#home">Home</a></li>
-			<li><a href="#education">Education</a></li>
-			<li><a href="#skills">Skills</a></li>
-   			<li><a href="#work">Work</a></li>
-			<li><a href="#networks">Networks</a></li>
-   			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</div><!-- End Header -->
+  <div id="main">
+    <div id="header">
 
-	<hr/>
-
-		<!-- Content --><div id="content">
-
-<!-- Scroller -->
-   <div id="scroller">
-	<!-- Menu Home -->
-	<div id="menu_home" class="contentitem">
-		<div class="main">
-			<div class="pagetitle">Cole Diamond - Welcome</div>
-   <h1>Welcome</h1>
-	<p><a rel="fancybox" title="Cole Diamond" href="<%= asset_path("profile_picture.jpg") %>" ><%= image_tag "profile_picture.jpg", :width => "80", :height=>"80", :rel =>"tipsy", :title => "Cole Diamond" %></a>
-
-Born and raised in Great Neck, New York, Cole Diamond is a junior at Columbia University where he studies Computer Science and Financial Economics. Cole is passionate about web development, building new ideas and innovating. A HackNY Fellow (Class of 2011), Cole thoroughly enjoys building applications that make life easier. Feel free to explore the site to find out more about Cole.</p>
-			</div>
-
-	<div class="sidebar">
-		<h2>About Me</h2>
-			<ul>
-				<li>Columbia Engineering, 2013</li>
-				<li>Computer Science Major</li>
-				<li>Economics Minor</li>
-				<li>Interested in
-				Finance &amp; <span style="margin-top: 5px; position:relative; left:13px;"> Software Engineering</span></li>
-			</ul>
-
-		<hr class="spacer"/>
-
-			<a class="button" href="#contact">Contact me</a>
-		</div>
-	</div><!-- End Menu Home -->
-
-	<div id="menu_education" class="contentitem">
-			<div class="pagetitle">Cole Diamond - Education</div>
-				<div class="main">
-		<h1>Curriculum Vitae</h1>
-			<ul class="skills" special>
-				<li><span class="topic">Columbia University (2009-2013)</span>
-				BS, Computer Science; BA, Financial Economics (3.8 GPA) </li>
-				<li><span class="topic">John L Miller Great Neck North High School</span><a href="http://www.antonnews.com/greatneckrecord/news/1261-the-class-of-2009honors-and-awards-.html" target="_blank" no_underline>Valedictorian of the Class of 2009</a></li>
-				<li><span class="topic">Distinctions</span>HackNY Fellow, National AP Scholar, 2360/2400 SAT <span style="margin-top: 5px; position:relative; left:159px;"> Deans List (All Semesters), Treasurer of ACM at Columbia</span></li>
-			</ul>
-				</div>
-				<div class="sidebar" style="margin-bottom:0px; padding:0px; font-size:10px;">
-
-					<h2 style="margin-bottom:3px; margin-top:0px; padding:0px;">Relevant Coursework</h2>
-						<ul style="margin-top:8px;">	
-						<li class="li-moreinfo" style="padding:0px;">
-							<p class="nopadding">
-						<span style="margin-bottom:8px;">	<span style="font-weight:bold;">Mathematics</span>Calculus I-V, Discrete Math, Linear Algebra
-							Scientific Computation</span>
-						<span style="margin-bottom:5px;"><span style="font-weight:bold;">Computer Science</span>Intro to Java, Object Oriented Programming, Data Structures, CS Theory, Advanced Programming, Robotics, Databases </span>
-						<span style="margin-bottom:8px;"><span style="font-weight:bold;">Economics</span>Principles of Economics, Microeconomics, Macroeconomics,
-							Accounting and Finance <br/>
-							</p>
-							                                                                      
-						</li>
-						</ul>
-					</div>
-			
-			
-				
-	 </div>
-
-	<div id="menu_skills" class="contentitem">
-			<div class="pagetitle">Cole Diamond - Skills</div>
-				<div class="main">
-		<h1>Programming Skills</h1>
-			<ul class="skills">
-				<li><span class="topic">Proficiency (4 years +)</span>Java 6.0, Python, HTML/CSS/JQuery &amp; SQL </li>
-				<li><span class="topic">Experience (2 years +)</span>Perl, Ruby,  C/C++ &amp; GitHub</li>
-				<li><span class="topic">In training (1 year)</span>JSP, PHP, MongoDB &amp; PostgreSQL</li>
-				<li><span class="topic">Frameworks</span> Django and Ruby on Rails (2.3, 3.0, 3.1), 3 years</li>
-			</ul>
-				</div>
-
-		<div class="sidebar">
-
-		<h2 style="margin-bottom:3px;">Websites Created</h2>
-			<ul style="margin-top:3px;">	
-			<li class="li-moreinfo">
-				<p class="nopadding" sites >
-					 <a href="http://www.greekgavel.com" target="_blank" site="greekgavel" description="<br/>A social networking site for fraternities and sororities to consolidate greek life on all fronts - the individual chapter, the larger organization and greek life at large for a university. The site offers a directory of all members of the organization, networking opportunities, a bulletin board for quick announcements, a gallery, a personal message utility and a forum." >GreekGavel</a><br/>
-					<b>A Social Network for Fraternities</b>
-					<br/><br/>
-					 <a href="http://www.matchu.me" target="_blank" site="matchume" description="Columbia's digital wingman. Anonymously find out whether your love is reciprocated. If it is - then you will have a new match. Otherwise, your romantic interest will stay anonymous. Features a 'secret admirer' utility, most matchable feed, private message forum with image/video embedding and multiple ajax widgets.">MatchU.Me</a><br/>
-						<b>Find Your Match, 100% Anonymously</b>
-					<br/><br/>
-					<a href="http://www.mealmecca.com" target="_blank" site="mealmecca" description="Leverages HTML 5's geolocation tool to determine your location and then feeds the zip code into Yelp. Yelp returns a list of restaurants in the specified location and I either add the restaurant to my database or fetch it. The basic idea is to find out *what* to order... not just *where* to order.">MealMecca</a><br/>
-						<b>Rate Menus, Not Restaurants</b> 
-					<br/> 					<br/>    
-					<a href="http://w4111a.cs.columbia.edu/~tlm2116/databases/index.php" target="_blank" site="flashd" description="Flash'd is a PHP fed application that lets you generate flashcard sets by category, ajax-fed quizzes and subscribe to public sets and quizzes.">Flash'd</a><br/>
-						<b>An Intuitive Flashcard App</b> 
-					<br/><br/>                                                                                    
-				</p>	
-			</li>
-			</ul>
-		</div>
-	</div><!-- Menu Work -->
-
-		<div id="menu_work" class="contentitem">
-			<div class="pagetitle">Cole Diamond - Experience</div>
-
-					<div class="main" style="margin-right: 0px; width: 70%;">
-			<h1>Work experience</h1>
-			  <ul class="skills">
-				<li><span class="topic">Gilt Groupe </span><br/><p>Software Engineer Intern New York, NY (05/2011 - 08/2011) </p></li>
-				<li><span class="topic">JP Morgan Chase</span><br/><p><%= "risk management intern".titleize() %>  (06/2010 - 08/2010)</p></li>
-			    <li><span class="topic">Columbia University </span><br/><p> <%= "research assistant: machine learning".titleize %> (06/2009 - 08/2009)</p></li>
-			  </ul>
-		</div>
-					
-		<div class="sidebar">
-				<h2 class="link" style="cursor:pointer;" onclick="window.location='<%= asset_path "resume.pdf" %>';" >Download Resume</a></h2>
-				<ul>
-				<li class="li-moreinfo">
-				<p class="nopadding">
-			
-				<ul class="thumb">
-					<a  href="<%= asset_path "resume.jpg" %>" rel="resume" ><%= image_tag "resume.jpg", :height => "153px", :width => "135px;", :style => "position:absolute; z-index:1000;", :title => "Click to Preview" %></a>
-					<a  href="<%= asset_path "resume2.jpg" %>" rel="resume"></a>
-					
-					</li>
-				</ul>
-				</p>
-				</li>
-				</ul>
-		</div>
-	</div><!-- End menu work -->
-
-
-		<!-- Menu Networks --><div id="menu_networks" class="contentitem">
-			<div class="pagetitle">Cole Diamond - Networks</div>
-		<h1>Let's connect...</h1>
-
-			<ul class="networks">
-				<li><a href="http://www.facebook.com/coleidiamond" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/facebook.png" alt="facebook"/><span class="title"><span class="sname">Facebook</span><span class="surl"><br/>facebook.com/coleidiamond</span></span></span></a></li>
-				<li><a href="http://twitter.com/#!/coal_diamond" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/twitter.png" alt="twitter"/><span class="title"><span class="sname">Twitter</span><span class="surl"><br/>@coal_diamond</span></span></span></a></li>
-				<li><a href="http://www.linkedin.com" target="_blank"><span class="background"></span><span class="content"><img src="assets/networks/linkedin.png" alt="linkedin"/><span class="title"><span class="sname">LinkedIn</span><span class="surl"><br/>linkedin.com/colediamond</span></span></span></a></li>
-			</ul>
-			</div><!-- End Menu Networks -->
-
-		<!-- Menu Contact -->
-		<div id="menu_contact" class="contentitem">
-			<div class="pagetitle">Cole Diamond - Contact</div>
-				<div class="main contact">
-
-		<h1>Contact</h1>
+      <a href="/" id="banner"><%= image_tag("rahul_sharma.jpg", :title => "Rahul Sharma", :rel => "tipsy", :style => "bottom: 15px; position: relative; right: -13px; z-index: 99;")%> <h1 style="	bottom: 76px; left: 113px; position: relative;"> Rahul Sharma </h1> </a>
 	
-			<div id="email_form">
-				<form method="post">
-				<input type="text" name="name" value="name"/>
-				<input type="text" name="email" value="email"/>
-				<textarea name="message" rows="4" cols="4">message</textarea>
-				<input type="submit" class="sendbutton sendmail" value="send"/>
-				</form>
-			</div>
+    </div>
+    <div id="arrow"></div>
+    <div id="content">
+      <ul id="menu" style="color:white;">
+        <li><a class="active" href="#about" id="about-button" title="About"><h2>About</h2></a></li>
+        <li><a href="#contact" id="contact-button" title="Contact"><h2>Contact</h2></a></li>
+        <li><a href="#work" id="code-button" title="Code"><h2>Resume</h2></a></li>
 
-			
-					<div id="email_send">
-						<h2>Your email has been sent!</h2>
-						<p>I'll get back to you as soon as possible.<br/>In the meanwhile check out my <a href="#networks">social network profiles</a>.</p>
-					</div>
-				</div>
+      </ul>
+      <div id="content-body">
+        <div id="about">
+          <p>
+            <b>Welcome!</b> My name is Rahul Sharma. I&rsquo;m an Economics and Mathematics Major at Columbia University in the City of New York, Class of 2013.
+          </p>
+          <p>After graduation, I plan to work in the financial sector. After interning at banks such as UBS and Morgan Stanley, I have accrued financial acumen to prepare me for this career path and realized a passion for investment banking.</p>
+        </div>
+        <div id="contact">
+          <div class="column">
 
-				<div class="sidebar">	
-			<h2>Cole Diamond</h2>
-			<p style="padding:4px 9px 0 0;">2849 Lerner Hall, 2920 Broadway
-			 <br/>New York NY 10027<br/>United States<br/><br/>Cell: +516 996 7037<br/>Email: <a href="mailto:cid2105@columbia.edu">cid2105@columbia.edu</a><br/></p><hr class="spacer" /><a class="button" href="<%= asset_path("Cole_Ian_Diamond.vcf")%>">Download vCard</a>
-	</div>
-	</div><!-- End Menu Contact -->
-	</div><!-- End Scroller -->
-	</div><!-- End Content -->
-	</div><!-- End Vcard -->
-	</div><!-- End Wrapper -->
+            <p>
+              <a><span class="label">Phone</span></a>
+              <span class="phone value">(410) 929-2701</span> 
+              <span class="label">Address</span>
+              <span class="address value">6481 Lerner Hall, 2920 Broadway <br />New York NY 10027</span> 
+              
+
+            </p>
+          </div>
+          <div class="column right">
+            <p>
+				<a class="vcard" href="#">Download my vCard</a>
+              <a class="linked-in" href="http://www.linkedin.com/pub/rahul-sharma/a/788/a06">LinkedIn</a>
+              <a class="facebook" href="http://www.facebook.com/flipsasser">Facebook</a>
+			  <br/>
+
+
+            </p>
+          </div>
+        </div>
+
+		<div id="work">
+       
+<a  href="<%= asset_path "resume.jpg" %>" rel="resume" >
+		<%= image_tag "resume.jpg", :height => "153px", :width => "135px;", :style => "bottom: 20px;
+	    left: 120px;
+	    position: relative;", :rel => "tipsy", :title => "Click to Preview" %>
+</a> <br/>
+           <a href="" rel="tipsy" title="My PDF Formatted Resume"><div style="text-align:center; color: #444444;
+		    font-size: 9pt;
+		    font-weight: 200; width:100%; position:relative; bottom:9px;">Download Resume</div></a>
+       
+        </div>
+
+  </div>
+
+      <div id="footer">
+        <div style="float:right; text-align:center; width: 97%; padding:4px 10px;background:#cfcfcf;color:#858585;text-shadow:1px 1px 1px #fff;border:none;font-weight:bold;font-size:10px;cursor:pointer; text-align:center;">Rahul Sharma - rs2992@columbia.edu - (859) 608 6086 - Columbia 2013 </div>
+      </div>
+    </div>
+
+
+  <div id="shadow"></div>
+
 	
 	    <script type="text/javascript">
 		$(document).ready(function()
@@ -226,6 +101,7 @@ Born and raised in Great Neck, New York, Cole Diamond is a junior at Columbia Un
 			
 			$("a[site], [no_underline]").css("text-decoration", "none");
 			
+			
 			$("h2.link, a[site], [no_underline]").hover(function (){
 			        $(this).css("text-decoration", "underline");
 			    },function(){
@@ -234,7 +110,7 @@ Born and raised in Great Neck, New York, Cole Diamond is a junior at Columbia Un
 			);
 			
 
- 		   var apiKey = 'ReuyKzSZUUjL';
+		   var apiKey = 'ReuyKzSZUUjL';
 
 		    // Notice the use of the each method to gain access to each element individually
 		    $('a[site]').each(function()
@@ -271,3 +147,6 @@ Born and raised in Great Neck, New York, Cole Diamond is a junior at Columbia Un
 	    </script>
 	
 
+
+</body>
+</html>
