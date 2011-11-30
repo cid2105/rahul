@@ -17,3 +17,4 @@
 //= require tipsy 
 //= require notification
 //= require qtip
+//= require jPaginate

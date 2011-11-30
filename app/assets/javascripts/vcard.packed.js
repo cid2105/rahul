@@ -32,9 +32,8 @@ $(function() {
 	var four = 4;
 	var five = 5;
 	var one = 1;
-	var googleTalk = $('a.google-talk');
-	googleTalk.attr('href', 'gtalk:f' + 'l' + 'i' + 'p' + '@' + 'x' + four.toString() + five.toString() + one.toString() + '.' + 'c' + 'om');
-	$('.email.value').html(googleTalk.attr('href').replace('gtalk:', ''));
+
+
 	var vcard = $('a.vcard')
 	vcard.attr('href', ['Fl' + 'i' + 'p' + 'S' + 'ass' + 'e' + 'r' , 'cf'].join('.v'));
 	vcard.click(function() {

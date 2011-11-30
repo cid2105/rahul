@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Address Book 6.1//EN
+N:Sharma;Rahul;;;
+FN:Rahul Sharma
+ORG:Columbia University;
+EMAIL;type=INTERNET;type=HOME;type=pref:rs2992@columbia.edu
+TEL;type=CELL;type=VOICE;type=pref:1 (859) 608-6086
+item1.ADR;type=HOME;type=pref:;;6841 Lerner Hall\, 2920 Broadway;New York;NY;10027;
+item1.X-ABADR:us
+item2.URL;type=pref:www.rahulsharma.us
+item2.X-ABLabel:_$!<HomePage>!$_
+CATEGORIES:card
+UID:9BC87819-46FB-4136-9E40-2DE63707946C
+X-ABUID:52A532D9-270F-44CF-B3A8-F3070748040D:ABPerson
+END:VCARD
